@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="autoLayout1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ugz-iP-iki">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Guess My Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfz-fF-Wvg">
+                                <rect key="frame" x="107.66666666666669" y="81" width="199" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" red="0.31088093482436702" green="0.66641019570707072" blue="0.23368460570238983" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yX2-eQ-wpR">
+                                <rect key="frame" x="10" y="194.66666666666663" width="394" height="507"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="243" verticalCompressionResistancePriority="1" image="chromastone-uaf" translatesAutoresizingMaskIntoConstraints="NO" id="iti-Ak-qf6">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="413"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="245" verticalCompressionResistancePriority="740" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zx5-ba-MA0">
+                                        <rect key="frame" x="30" y="443" width="334" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iti-Ak-qf6" secondAttribute="trailing" id="F5x-TM-QQY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zx5-ba-MA0" secondAttribute="trailing" constant="30" id="Ooj-y1-Ynu"/>
+                                    <constraint firstItem="Zx5-ba-MA0" firstAttribute="leading" secondItem="yX2-eQ-wpR" secondAttribute="leading" constant="30" id="ao6-lK-A4w"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zx5-ba-MA0" secondAttribute="bottom" constant="30" id="dNy-00-YfN"/>
+                                    <constraint firstItem="iti-Ak-qf6" firstAttribute="top" secondItem="yX2-eQ-wpR" secondAttribute="top" id="dqA-Ok-eZ6"/>
+                                    <constraint firstItem="Zx5-ba-MA0" firstAttribute="top" secondItem="iti-Ak-qf6" secondAttribute="bottom" constant="30" id="jXR-30-qBu"/>
+                                    <constraint firstItem="iti-Ak-qf6" firstAttribute="leading" secondItem="yX2-eQ-wpR" secondAttribute="leading" id="yRc-UC-IQq"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnf-GR-mn2">
+                                <rect key="frame" x="174.66666666666666" y="751.66666666666663" width="65" height="65.333333333333371"/>
+                                <color key="backgroundColor" red="0.69098107993197277" green="0.85461840986394555" blue="0.23992878401360543" alpha="0.7635813327814569" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Check" cornerStyle="medium"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cap-lZ-jIr"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="yX2-eQ-wpR" firstAttribute="leading" secondItem="cap-lZ-jIr" secondAttribute="leading" constant="10" id="22w-mL-Th9"/>
+                            <constraint firstItem="cap-lZ-jIr" firstAttribute="bottom" secondItem="Tnf-GR-mn2" secondAttribute="bottom" constant="45" id="2l4-hf-SXi"/>
+                            <constraint firstItem="mfz-fF-Wvg" firstAttribute="centerX" secondItem="ugz-iP-iki" secondAttribute="centerX" id="8um-dL-bHa"/>
+                            <constraint firstItem="cap-lZ-jIr" firstAttribute="trailing" secondItem="yX2-eQ-wpR" secondAttribute="trailing" constant="10" id="Ase-py-f0D"/>
+                            <constraint firstItem="Tnf-GR-mn2" firstAttribute="top" secondItem="yX2-eQ-wpR" secondAttribute="bottom" constant="50" id="SLm-v9-4j6"/>
+                            <constraint firstItem="mfz-fF-Wvg" firstAttribute="top" secondItem="cap-lZ-jIr" secondAttribute="top" constant="37" id="fyR-Y2-0fp"/>
+                            <constraint firstItem="yX2-eQ-wpR" firstAttribute="centerY" secondItem="ugz-iP-iki" secondAttribute="centerY" id="i7F-Ro-BLf"/>
+                            <constraint firstItem="yX2-eQ-wpR" firstAttribute="top" secondItem="mfz-fF-Wvg" secondAttribute="bottom" constant="80" id="uNX-ei-HAE"/>
+                            <constraint firstItem="Tnf-GR-mn2" firstAttribute="centerX" secondItem="ugz-iP-iki" secondAttribute="centerX" id="yaT-Q9-kRH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17.39130434782609" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" systemColor="linkColor"/>
+    <resources>
+        <image name="chromastone-uaf" width="263" height="349"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
